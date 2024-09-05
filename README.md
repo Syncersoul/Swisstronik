@@ -21,14 +21,16 @@ source $HOME/.bash_profile
 [ ! -d ~/go/bin ] && mkdir -p ~/go/bin
 ```
 
-# set vars
+**set vars**
+```
 echo "export WALLET="wallet"" >> $HOME/.bash_profile
 echo "export MONIKER="test"" >> $HOME/.bash_profile
 echo "export SWISS_CHAIN_ID="swisstronik_1291-1"" >> $HOME/.bash_profile
 echo "export SWISS_PORT="44"" >> $HOME/.bash_profile
 source $HOME/.bash_profile
+```
 
-# download binary
+**download binary**
 cd $HOME
 rm -rf swisstronik-chain
 git clone https://github.com/SigmaGmbH/swisstronik-chain swisstronik
