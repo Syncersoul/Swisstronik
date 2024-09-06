@@ -31,6 +31,7 @@ source $HOME/.bash_profile
 ```
 
 **download binary**
+```
 cd $HOME
 rm -rf swisstronik-chain
 git clone https://github.com/SigmaGmbH/swisstronik-chain swisstronik
@@ -38,6 +39,7 @@ cd swisstronik
 git submodule update --init --recursive
 make build
 make install
+```
 
 # config and init app
 swisstronikd config node tcp://localhost:${SWISS_PORT}657
