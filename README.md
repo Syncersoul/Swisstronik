@@ -41,11 +41,13 @@ make build
 make install
 ```
 
-# config and init app
+**config and init app**
+```
 swisstronikd config node tcp://localhost:${SWISS_PORT}657
 swisstronikd config keyring-backend os
 swisstronikd config chain-id swisstronik_1291-1
 swisstronikd init "test" --chain-id swisstronik_1291-1
+```
 
 # download genesis and addrbook
 wget -O $HOME/.swisstronik/config/genesis.json https://server-2.itrocket.net/testnet/swisstronik/genesis.json
