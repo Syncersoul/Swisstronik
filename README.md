@@ -136,8 +136,10 @@ pruning: nothing: 100/0/10 | indexer: null
 
 source <(curl -s https://itrocket.net/api/testnet/swisstronik/autoinstall/)
 Create wallet
-# to create a new wallet, use the following command. don’t forget to save the mnemonic
+**to create a new wallet, use the following command. don’t forget to save the mnemonic**
+```
 swisstronikd keys add $WALLET
+```
 
 # to restore exexuting wallet, use the following command
 swisstronikd keys add $WALLET --recover
