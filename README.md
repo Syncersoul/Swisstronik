@@ -188,10 +188,13 @@ sudo ufw allow ssh/tcp
 sudo ufw allow ${SWISS_PORT}656/tcp
 sudo ufw enable
 ```
-Delete node
+
+**Delete node**
+```
 sudo systemctl stop swisstronikd
 sudo systemctl disable swisstronikd
 sudo rm -rf /etc/systemd/system/swisstronikd.service
 sudo rm $(which swisstronikd)
 sudo rm -rf $HOME/.swisstronik
 sed -i "/SWISS_/d" $HOME/.bash_profile
+```
